@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 __all__ = ('dispatch', 'DispatchError')
 __author__ = 'Vladimir Keleshev <vladimir@keleshev.com>'
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 __license__ = 'MIT'
 __keywords__ = 'docopt dispatch function adapter kwargs'
 __url__ = 'https://github.com/halst/docopt-dispatch'
