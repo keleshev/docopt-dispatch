@@ -2,8 +2,6 @@
 import re
 from collections import OrderedDict
 
-from docopt import docopt
-
 
 __all__ = ('dispatch', 'DispatchError')
 __author__ = 'Vladimir Keleshev <vladimir@keleshev.com>'
@@ -29,6 +27,7 @@ class Dispatch(object):
         return decorator
 
     def __call__(self, *args, **kwargs):
+        from docopt import docopt
         arguments = docopt(*args, **kwargs)
         for argument, function in self._functions.items():
             if arguments[argument]:
