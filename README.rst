@@ -12,8 +12,8 @@ Example
 
     Usage: run.py --development <host> <port>
            run.py --production <host> <port>
-           run.py remote add <item>
-           run.py remote delete <item>
+           run.py items add <item>
+           run.py items delete <item>
 
     """
     from docopt_dispatch import dispatch
